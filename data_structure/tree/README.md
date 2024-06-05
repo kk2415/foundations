@@ -36,6 +36,7 @@
     ├── 이진 트리(Binary Tree)/
     │   ├── 포화 이진 트리(Full Binary Tree)
     │   ├── 완전 이진 트리(Complete Binary Tree)
+    │   │   └── 힙(Heap)
     │   ├── 균형 이진 트리(Balanced Binary Tree)
     │   ├── 이진 탐색 트리(Binary Search Tree, BST)
     │   ├── 자기 균형 이진 탐색 트리(Self-Balancing Binary Search Tree)/
