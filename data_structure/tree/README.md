@@ -27,3 +27,24 @@
 특정 노드 위에 위치한 모든 노드를 가리켜 조상 노드(ancestor node)라 한다. 노드 1, 2는 노드 5의 조상 노드이다.
 + **후손(descendant)**  
 특정 노드 아래에 위치한 노드를 가리켜 후손 노드(descendant node)라 한다. 노드 2,3,4,5,6,7,8은 노드 1의 후손 노드이다.
+
+
+# 트리의 종류
+
+```
+트리(Tree)/
+    ├── 이진 트리(Binary Tree)/
+    │   ├── 포화 이진 트리(Full Binary Tree)
+    │   ├── 완전 이진 트리(Complete Binary Tree)
+    │   ├── 균형 이진 트리(Balanced Binary Tree)
+    │   ├── 이진 탐색 트리(Binary Search Tree, BST)
+    │   ├── 자기 균형 이진 탐색 트리(Self-Balancing Binary Search Tree)/
+    │   │   ├── AVL 트리(AVL Tree)
+    │   │   ├── 레드-블랙 트리(Red-Black Tree)
+    │   │   └── Splay 트리(Splay Tree)
+    │   └── Tango 트리 (Tango Tree)
+    ├── B-트리(B-Tree)
+    ├── B+트리(B+ Tree)
+    ├── R-트리 (R-Tree)
+    └── 트라이 (Trie)
+```
