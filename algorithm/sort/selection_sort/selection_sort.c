@@ -1,4 +1,4 @@
-#include <sys/types.h>
+#include <stdio.h>
 
 void selection_sort(int arr[], size_t len)
 {

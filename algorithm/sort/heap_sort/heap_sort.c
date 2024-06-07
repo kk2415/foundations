@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <sys/types.h>
 #include <glib.h>
 
 int compare_ints(gconstpointer a, gconstpointer b, gpointer user_data)

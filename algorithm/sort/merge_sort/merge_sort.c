@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/types.h>
 
 void conquer(int arr[], size_t left, size_t mid, size_t right)
 {
