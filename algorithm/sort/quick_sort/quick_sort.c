@@ -7,12 +7,30 @@ void swap(int arr[], int idx1, int idx2)
 	arr[idx2] = temp;
 }
 
+int mid_of_three(int arr[], int left, int right)
+{
+	int samples[] = {left, (left + right) / 2, right};
+
+	if (arr[samples[0]] > arr[samples[1]])
+		swap(samples, 0, 1);
+
+	if (arr[samples[1]] > arr[samples[2]])
+		swap(samples, 1, 2);
+
+	if (arr[samples[0]] > arr[samples[1]])
+		swap(samples, 0, 1);
+
+	return samples[1];
+}
+
 int partition(int arr[], int left, int right)
 {
-	int pivot = arr[left];
+	int mid = mid_of_three(arr, left, right);
+	int pivot = arr[mid];
 	int low = left + 1;
 	int high = right;
 
+	swap(arr, left, mid);
 	while (low <= high)
 	{
 		while (pivot >= arr[low] && low <= right)
