@@ -44,6 +44,7 @@
     │   │   └── 힙(Heap)
     │   ├── 균형 이진 트리(Balanced Binary Tree)
     │   ├── 이진 탐색 트리(Binary Search Tree, BST)
+    │   ├── 수식 트리(Expression Tree)
     │   ├── 자기 균형 이진 탐색 트리(Self-Balancing Binary Search Tree)/
     │   │   ├── AVL 트리(AVL Tree)
     │   │   ├── 레드-블랙 트리(Red-Black Tree)

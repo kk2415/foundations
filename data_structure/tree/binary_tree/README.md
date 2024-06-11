@@ -1,6 +1,6 @@
 # 이진 트리(Binary Tree)
 
-![b_tree](https://github.com/kk2415/foundations/assets/79124915/88288a20-aea1-4a56-a1b3-ee48af7d72a2)
+![b_tree](https://github.com/kk2415/foundations/assets/79124915/6efb2f6b-918c-4814-a05a-a48bed009f72)
 
 이진 트리는 트리 자료구조의 일종으로 각 노드가 최대 두 개의 자식을 가지는 트리이다. 아래는 트리가 이진 트리되기 위한 조건이다.
 + 루트 노드를 중심으로 두 개의 서브 트리로 나뉘어진다.
@@ -33,6 +33,7 @@
    │   └── 힙(Heap)
    ├── 균형 이진 트리(Balanced Binary Tree)
    ├── 이진 탐색 트리(Binary Search Tree, BST)
+   ├── 수식 트리(Expression Tree)
    ├── 자기 균형 이진 탐색 트리(Self-Balancing Binary Search Tree)/
    │   ├── AVL 트리(AVL Tree)
    │   ├── 레드-블랙 트리(Red-Black Tree)
