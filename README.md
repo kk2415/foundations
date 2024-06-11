@@ -23,7 +23,7 @@
 # 자료구조(Data Structure)
 + 트리(Tree)
   + 이진 트리(Binary Tree)
-+ 
+    + 이진 탐색 트리(Binary Search Tree)
 
 <br/>
 
