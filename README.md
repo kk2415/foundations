@@ -3,6 +3,8 @@
 # 알고리즘(Algorithm)
 ## 수학(Math)
 + 조합론
+  + 순열(Permutation)
+    + 팩토리얼(Factorial)
 + 정수론
   + 약수(Divisor)
   + 소수(Prime Number)
