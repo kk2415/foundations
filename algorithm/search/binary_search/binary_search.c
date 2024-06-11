@@ -24,3 +24,17 @@ ssize_t binary_search(int arr[], size_t len, int target)
 
 	return -1;
 }
+
+ssize_t recur_binary_search(int arr[], size_t first, size_t last, int target)
+{
+	if (first > last)
+		return -1;
+
+	int mid = (first + last) / 2;
+	if (arr[mid] == target)
+		return mid;
+	else if (arr[mid] > target)
+		return recur_binary_search(arr, first, mid - 1, target);
+	else
+		return recur_binary_search(arr, mid + 1, last, target);
+}
