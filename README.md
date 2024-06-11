@@ -9,6 +9,7 @@
 ## 탐색(Search)
 + 선형 탐색(Linear Search)
 + 이진 탐색(Binary Search)
++ 보간 탐색(Interpolation Search)
 ## 정렬(Sort)
 + 버블 정렬(Bubble Sort)
 + 선택 정렬(Selcetion Sort)
