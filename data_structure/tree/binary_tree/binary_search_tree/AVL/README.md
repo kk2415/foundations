@@ -35,3 +35,20 @@ AVL 트리의 균형이 무너지는 상태는 4가지로 정리가 된다. 그�
   + RL회전: 
     + LL회전 진행
     + RR회전 진행
+  
+<br/>
+
+## 시간 복잡도
+https://www.javatpoint.com/avl-tree-time-complexity  
+
+OPERATION	WORST CASE  
+Insert:	(log n)  
+Delete:	O(log n)  
+Search:	O(log n)  
+Traversal:	O(log n)  
+
+<br/>
+<br/>
+
+자바 라이브러리 중에서 apache 라이브러리는 AVL 트리를 지원한다.
+https://commons.apache.org/proper/commons-math/javadocs/api-3.6.1/org/apache/commons/math3/geometry/partitioning/utilities/AVLTree.html
