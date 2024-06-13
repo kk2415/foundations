@@ -11,8 +11,8 @@ int factorial(int n)
 
 int recur_factorial(int n)
 {
-	if (n <= 1)
-		return 1; // 0! = 1 and 1! = 1
+	if (n == 0)
+		return 1;
 
 	return n * factorial(n - 1);
 }

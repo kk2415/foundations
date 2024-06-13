@@ -8,6 +8,7 @@
 + 정수론
   + 약수(Divisor)
   + 소수(Prime Number)
+  + 피보나치 수열(Fibonacci Sequence)
 ## 탐색(Search)
 + 선형 탐색(Linear Search)
 + 이진 탐색(Binary Search)
