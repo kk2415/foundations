@@ -4,26 +4,20 @@ import java.util.Set;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
-public class Graph {
+public class Graph1 {
 
-    private final Integer numberVertex;
-    private Integer numberEdge;
     private final Set<Vertex>[] adjList;
-    private boolean[] visitInfo;
 
-    public Graph(Integer numberVertex) {
-        this.numberVertex = numberVertex;
-        this.numberEdge = 0;
-
+    public Graph1(Integer numberVertex) {
         this.adjList = new Set[numberVertex];
-        this.visitInfo = new boolean[numberVertex];
+
         for (int i = 0; i < numberVertex; i++) {
             adjList[i] = new LinkedHashSet<>();
-            this.visitInfo[i] = false;
         }
     }
 
     public void traversing(Integer start) {
+        boolean[] visitInfo = new boolean[adjList.length];
         Stack<Vertex> adjacentVertex = new Stack<>();
         adjacentVertex.push(new Vertex(start));
 
@@ -31,7 +25,7 @@ public class Graph {
             Vertex v = adjacentVertex.pop();
             if (!visitInfo[v.name()]) {
                 visitInfo[v.name()] = true;
-                System.out.println(v.name() + "방문 완료");
+                System.out.println(v.name() + " 방문 완료");
 
                 adjacentVertices(v).stream()
                         .filter(neighbor -> !visitInfo[neighbor.name()])
@@ -40,25 +34,24 @@ public class Graph {
         }
     }
 
+    public void recur_traversing(Integer v, boolean[] visitInfo) {
+        System.out.println(v + " 방문 완료");
+        visitInfo[v] = true;
+
+        adjacentVertices(new Vertex(v)).stream()
+                .filter(neighbor -> !visitInfo[neighbor.name()])
+                .forEach(neighbor -> recur_traversing(neighbor.name(), visitInfo));
+    }
+
     public void addEdge(Integer from, Integer to) {
         adjList[from].add(new Vertex(to));
         adjList[to].add(new Vertex(from));
-
-        numberEdge++;
     }
 
     public Set<Vertex> adjacentVertices(Vertex vertex) {
         return adjList[vertex.name()].stream()
                 .map(v -> new Vertex(v.name()))
                 .collect(Collectors.toSet());
-    }
-
-    public void showEdgeInfo() {
-        for (int i = 0; i < numberVertex; i++) {
-            System.out.print(i + "과(와) 연결된 정점: ");
-            adjList[i].forEach(v -> System.out.print(v.name + " "));
-            System.out.println();
-        }
     }
 
     private class Vertex {
