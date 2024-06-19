@@ -72,8 +72,8 @@ void preOrderTraverse(BtreeNode *tree, VisitFuncPtr action)
 		return;
 
 	action(tree->data);
-	inOrderTraverse(tree->left, action);
-	inOrderTraverse(tree->right, action);
+	preOrderTraverse(tree->left, action);
+	preOrderTraverse(tree->right, action);
 }
 
 void postOrderTraverse(BtreeNode *tree, VisitFuncPtr action)
@@ -81,8 +81,8 @@ void postOrderTraverse(BtreeNode *tree, VisitFuncPtr action)
 	if (tree == NULL)
 		return;
 
-	inOrderTraverse(tree->left, action);
-	inOrderTraverse(tree->right, action);
+	postOrderTraverse(tree->left, action);
+	postOrderTraverse(tree->right, action);
 	action(tree->data);
 }
 
